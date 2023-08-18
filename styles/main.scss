@@ -1,0 +1,32 @@
+@import 'colors';
+@import 'button';
+
+
+body{
+ font-family: Roboto;
+}
+%padding{
+  padding:10px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  @extend %padding;
+    &__logo{
+      width:350px;
+      height:80px;
+    }
+}
+.navbar{
+  @extend %padding;
+  &__subtitle{
+    color: $subtitle-color;
+    font-weight: 100;
+  }
+  &__btn{
+    @include btn;
+    background: linear-gradient(to bottom, $secondary-color,$primary-color);
+  }
+  
+}
