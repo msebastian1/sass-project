@@ -1,0 +1,5 @@
+@mixin box-shadow($x-offset, $y-offset, $blur,$color){
+
+  box-shadow: $x-offset $y-offset $blur $color;
+
+}

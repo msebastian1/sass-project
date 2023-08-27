@@ -11,29 +11,117 @@
 </head>
 <body>
   <header class="header">
+    <div>
     <img class="header__logo"  src="images/logo/ohmyfood.png" alt="logo">
+  </div>
     <div class="header__location">
       <i class="fa-solid fa-location-dot"></i> Paris, Ballivelle
     </div>
   </header>
   <nav class="navbar">
     <h1 class="navbar__title">Book the menu you like </h1>
-    <p class="navbar__subtitle">Discover top-of-the-art restaurant we picked for you</p>
-    <button class="navbar__btn">Explore our restaurants</button>
+    <p class="navbar__subtitle">Discover top-of-the-art restaurant we picked for you </p>
+    <button class="btn-primary">Explore our restaurants</button>
   </nav>
-  <section class="list">
-    <h2>How it works</h2>
-    <ol class="list_items">
-      <li class="list_elements"><a>
-        <i class="fa-solid fa-mobile-screen-button"></i>
-        Chose a restaurant</a></li>
-      <li class="list_elements"><a>
-        <i class="fa-solid fa-bars"></i>
-        create your menu</a></li>
-      <li class="list_elements"><a>
-        <i class="fa-solid fa-store"></i>
-        Go enjoy it at the restaurant</a></li>
-    </ol>
-  </section>
-</body>
+  <h2 class="title">How it works</h2>
+
+  <div class="list">
+  
+    <a href="#" class="list__item" >
+      <div class="list__number">1</div>
+      <i class="fa-solid fa-mobile-screen-button list__icon"></i>
+      <p class="list__description"> Chose a restaurant</p>
+  </a>
+  <a class="list__item" href="#">
+
+      <div class="list__number">2</div>
+      <i class="fa-solid fa-bars list__icon"></i>
+      <p class="list__description">create your menu</p>
+
+</a>
+<a  class="list__item" href="#">
+    
+   
+      <div class="list__number">3</div>
+      <i class="fa-solid fa-store list__icon"></i>
+      <p class="list__description">Go enjoy it at the restaurant</p>
+   
+
+</a>
+  </div>
+  
+<main class="main">
+    <h2 class="title">Restaurant</h2>
+    <div class="menu ">
+      <a  class="card" href= "full_Pallete.html">
+        <img class="card__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay">
+        <div class="card__description">
+          <div>
+          <h3 class="card__title">The Full Palette</h3>
+          <p class="card__text">New York</p>
+          </div>
+          <div class="card__rating">
+            <i class="fa-regular fa-heart fa-size"></i>
+          </div>
+        </div>
+      </a>
+      <a  class="card" href= "#">
+        <img class="card__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="jay">
+        <div class="card__description">
+          <div>
+          <h3 class="card__title">The Enchanted Palette</h3>
+          <p class="card__text">New York</p>
+          </div>
+          <div class="card__rating">
+            <i class="fa-regular fa-heart fa-size"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu ">
+      <a  class="card" href= "#">
+        <img class="card__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="jay">
+        <div class="card__description">
+          <div>
+          <h3 class="card__title">Bastille</h3>
+          <p class="card__text">New York</p>
+          </div>
+          <div class="card__rating">
+            <i class="fa-regular fa-heart fa-size"></i>
+          </div>
+        </div>
+      </a>
+      <a  class="card" href= "#">
+        <img class="card__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="jay">
+        <div class="card__description">
+          <div>
+          <h3 class="card__title">Le Gourmand</h3>
+          <p class="card__text">New York</p>
+          </div>
+          <div class="card__rating">
+            <i class="fa-regular fa-heart fa-size"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__logoblock">
+    <img class="footer__logo"  src="images/logo/ohmyfood.png" alt="logo">
+    </div>
+    <div class="footer__content">
+      <div class="footer__item">
+        <i class="fa-solid fa-utensils"></i>
+        <p class="footer__margin">suggest a restaurant</p>
+      </div>
+      <div class="footer__item">
+        <i class="fa-solid fa-handshake-angle"></i>
+        <p class="footer__margin">Become a partner</p>
+      </div>
+    <p class="footer__margin">Legal</p>
+    <p class="footer__margin">Contact</p>
+  </div>
+
+  </footer>
+ </body>
 </html>
