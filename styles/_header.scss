@@ -1,7 +1,0 @@
-%header{
-  @include flex(space-between);
-  @extend %padding;
-    &__logo{
-      @include dimension(350px, 80px);
-    }
-}

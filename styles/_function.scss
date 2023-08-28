@@ -3,3 +3,11 @@
   box-shadow: $x-offset $y-offset $blur $color;
 
 }
+
+
+
+@each $key, $val in $justify-content{
+  .justify-content-#{$key}{
+    @include  justify-content($center:$val);
+  }
+}

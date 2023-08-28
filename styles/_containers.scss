@@ -1,0 +1,48 @@
+
+@include breakpoint(large){
+.container{
+  @include make-container(20px);
+}
+
+.row{
+ display: flex;
+}
+
+.column{
+  width:100%;
+}
+}
+
+
+@include breakpoint(medium){
+  .container{
+    @include make-container(20px);
+  }
+  
+  .row{
+   display: flex;
+  }
+  
+  .column{
+    width:100%;
+  }
+  }
+
+
+@include breakpoint(small){
+  .container{
+    @include make-container(20px);
+  }
+  
+  .row{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center !important;
+  }
+  
+  .column{
+    width:100%;
+  }
+
+}
+

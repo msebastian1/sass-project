@@ -1,151 +1,160 @@
-@import './utils/colors';
-@import './utils/extend';
-@import './utils/mixins';
-@import './utils/font';
-@import './components/button';
-@import './components/underline';
+@import 'variables';
+@import 'font';
+@import 'base';
+@import 'extend';
+@import 'mixins';
+@import 'card';
+@import "colours";
+
+@import 'button';
+@import 'underline';
+@import 'containers';
+@import 'breakpoint';
 @import './pages/index';
+@import 'function';
 
 
-body{
-  font-family: $font-Roboto;
+.number-icon{
+  @include number();
 }
 
-.card{
- &__image{
-  @include card-image(100%, 350px);
- }
-}
-.fa-size{
-  font-size: x-large;
-}
-.container{
-  @extend %padding;
-  &__title{
-    @include flex(space-between);
-    font-family: $font-Shrikhand;
+
+
+// .card{
+//  &__image{
+//   @include card-image(100%, 350px);
+//  }
+// }
+// .fa-size{
+//   font-size: x-large;
+// }
+// .container{
+//   @extend %padding;
+//   &__title{
+//     @include flex(space-between);
+//     font-family: $font-Shrikhand;
    
-  }
-  &__list-title{
-    padding: 0px 0px 0px 30px;
-    font-weight: 100;
-    color:  #7F7E81;
-  }
-  &__heart{
-    @include flex(start);
-    @include dimension(100px,auto);
+//   }
+//   &__list-title{
+//     padding: 0px 0px 0px 30px;
+//     font-weight: 100;
+//     color:  #7F7E81;
+//   }
+//   &__heart{
+//     @include flex(start);
+//     @include dimension(100px,auto);
    
-  }
+//   }
   
-  &__content{
-    @include flex(space-between);
-  }
+//   &__content{
+//     @include flex(space-between);
+//   }
 
-  &__item{
-    @include list-btn;
-    @include dimension(23rem, auto);
-    @include margin(20px);
-    @include flex(space-between);
-  }
-  &__item-title{
-    font-weight: $font-large;
-  }
-  &__item-subtitle{
-    font:$font-medium;
-    color:$description-color;
-  }
-  &__button{
-    @include flex(center);
-    @include dimension(100%, 70px);
-  }
+//   &__item{
+//     @include list-btn;
+//     @include dimension(23rem, auto);
+//     @include margin(20px);
+//     @include flex(space-between);
+//   }
+//   &__item-title{
+//     font-weight: $font-large;
+//   }
+//   &__item-subtitle{
+//     font:$font-medium;
+//     color:$description-color;
+//   }
+//   &__button{
+//     @include flex(center);
+//     @include dimension(100%, 70px);
+//   }
 
-} 
+// } 
 
 
 
-// ************tablet version *****************
-@media screen and (min-width: 786px) and (max-width: 992px){
+// // ************tablet version *****************
+// @media screen and (min-width: 786px) and (max-width: 992px){
 
-.container{
-  &__content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  &__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width:98%;
-    margin:10px;
-  }
-  &__item-title{
-    font-weight: $font-medium;
+// .container{
+//   &__content{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+//   &__list{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     width:98%;
+//     margin:10px;
+//   }
+//   &__item-title{
+//     font-weight: $font-medium;
    
-  }
-  &__item-subtitle{ 
-    color:$description-color;
+//   }
+//   &__item-subtitle{ 
+//     color:$description-color;
 
-  }
-  &__item{
-    @include list-btn(8px);
-    @include dimension(98%, 5rem);
-    margin: 0px 10px 20px 0px;
-    @include flex(space-between);
-  }
-}
+//   }
+//   &__item{
+//     @include list-btn(8px);
+//     @include dimension(98%, 5rem);
+//     margin: 0px 10px 20px 0px;
+//     @include flex(space-between);
+//   }
+// }
 
   
-}
+// }
 
-@media screen and (max-width:786px){
+// @media screen and (max-width:786px){
   
   
   
-  .header{
+//   .header{
     
-    .display{
-      display: inline;
-    }
-    &__logoblock{
-      width:100%;
-      @include flex();
+//     .display{
+//       display: inline;
+//     }
+//     &__logoblock{
+//       width:100%;
+//       @include flex();
       
-    }
+//     }
 
-  }
+//   }
   
 
-  .container{
-    position: absolute;
-    z-index: 1;
-    background-color: #EDECEF;
-    margin: -50px 0px 0px 0px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+//   .container{
+//     position: absolute;
+//     z-index: 1;
+//     background-color: #EDECEF;
+//     margin: -50px 0px 0px 0px;
+//     border-top-left-radius: 50px;
+//     border-top-right-radius: 50px;
     
-    &__content{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    &__list{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      width:100%;
-      margin:10px;
-    }
-    &__list-title{
-      padding: 0px;
-    }
-    &__item{
-      @include list-btn(8px);
-      @include dimension(95%, 5rem);
-      margin: 0px 10px 20px 0px;
-      @include flex(space-between);
-    }
+//     &__content{
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//     }
+//     &__list{
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: flex-start;
+//       width:100%;
+//       margin:10px;
+//     }
+//     &__list-title{
+//       padding: 0px;
+//     }
+//     &__item{
+//       @include list-btn(8px);
+//       @include dimension(95%, 5rem);
+//       margin: 0px 10px 20px 0px;
+//       @include flex(space-between);
+//     }
   
-  }
+//   }
 
-}
+// }

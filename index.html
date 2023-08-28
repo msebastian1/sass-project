@@ -4,55 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
 </head>
-<body>
-  <header class="header">
-    <div>
-    <img class="header__logo"  src="images/logo/ohmyfood.png" alt="logo">
-  </div>
-    <div class="header__location">
-      <i class="fa-solid fa-location-dot"></i> Paris, Ballivelle
+<body >
+<div class="container ">
+  <div class="row ">
+    <div class="column justify-content-start">
+      <img class="header__logo"  src="images/logo/ohmyfood.png" alt="logo">
     </div>
-  </header>
-  <nav class="navbar">
-    <h1 class="navbar__title">Book the menu you like </h1>
-    <p class="navbar__subtitle">Discover top-of-the-art restaurant we picked for you </p>
+     <div class="column justify-content-end gap"> 
+      <i class="fa-solid fa-location-dot "></i>
+      <p>Paris, Ballivelle</p> 
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <h1 >Book the menu you like </h1>
+    <p>Discover top-of-the-art restaurant we picked for you </p>
     <button class="btn-primary">Explore our restaurants</button>
-  </nav>
+  </div>
+
+<div class="container">
   <h2 class="title">How it works</h2>
-
-  <div class="list">
-  
-    <a href="#" class="list__item" >
-      <div class="list__number">1</div>
+  <div class="row justify-content-space-between">
+    <a class=" opt-item" href="#">
+      <div class="number-icon">1</div>
       <i class="fa-solid fa-mobile-screen-button list__icon"></i>
-      <p class="list__description"> Chose a restaurant</p>
-  </a>
-  <a class="list__item" href="#">
-
-      <div class="list__number">2</div>
+       <p class="list__description"> Chose a restaurant</p>
+   </a>
+   <a class="  opt-item " href="#">
+      <div class="number-icon">2</div>
       <i class="fa-solid fa-bars list__icon"></i>
       <p class="list__description">create your menu</p>
-
-</a>
-<a  class="list__item" href="#">
-    
-   
-      <div class="list__number">3</div>
+   </a>
+    <a  class="  opt-item" href="#">   
+      <div class="number-icon">3</div>
       <i class="fa-solid fa-store list__icon"></i>
       <p class="list__description">Go enjoy it at the restaurant</p>
-   
-
-</a>
+    </a>
   </div>
+</div>
+
   
-<main class="main">
+<!-- <main class="main">
     <h2 class="title">Restaurant</h2>
-    <div class="menu ">
+    <div class="menu "> 
       <a  class="card" href= "full_Pallete.html">
         <img class="card__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay">
         <div class="card__description">
@@ -106,9 +107,8 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="footer__logoblock">
-    <img class="footer__logo"  src="images/logo/ohmyfood.png" alt="logo">
-    </div>
+    <div class="footer__title">Ohmyfood</div>
+    
     <div class="footer__content">
       <div class="footer__item">
         <i class="fa-solid fa-utensils"></i>
@@ -122,6 +122,6 @@
     <p class="footer__margin">Contact</p>
   </div>
 
-  </footer>
+  </footer> -->
  </body>
 </html>

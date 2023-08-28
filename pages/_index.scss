@@ -1,178 +1,176 @@
-body{
-  font-family: Roboto;
-  color:black;
- }
- a{
-  text-decoration: none;
-  color:$anchor-color;
-}
-.display{
-  display: none;
-  
-}
-.title{
-  @extend %padding;
-  @include margin(5px);
-}
-.header{
-  @include flex(space-between);
-  @extend %padding;
-    &__logo{
-      @include dimension(250px, 60px);
-    }
-}
-.navbar{
-  @extend %padding;
-  &__title{
-    @include margin(10px);
-  }
-  &__subtitle{
-    color:$subtitle-color;
-    font-weight:$font-medium;
-    @include margin(10px);
-  }
-}
-.list{
-  display: block;
-  @include padding(10px);
-  @include flex(space-around);
-      &__item{
-       @include flex-gap(12px);
-       @include list-btn(15px);
-       @include dimension(260px, 30px);
-      
-      }
-      &__number{
-       @include number();
-      }
-      &__item:hover{
-        background-color:$primary-bg-color;
-      }
-      &__icon{
-        color: $description-color;
-      }
-      
-      
-}
-.main{
-  @extend %padding;
-  .menu{
-    @include flex(space-between);
-   
-    gap:20px;
-  }
-  .card{
-    @include card(100%, 400px);
-    &__image{
-      @include card-image(100%, 300px);
-    }
-    &__description{
-      padding: 0px 20px 0px 20px;
-      @include flex(space-between);
-    }
-    &__rating{
-      font-size: larger;
-    }
-  }
-}
-.footer{
-  @include bg-color(#6F6D73);
-  color: $white-color;
-  &__logoblock{
-    @extend %padding;
-  }
-  &__logo{
-    @include dimension(200px,40px);
-    color:$white-color
-  }
-  &__content{
-   @extend %padding;
-  }
-  &__item{
-    @include flex-gap(5px);
-   
-  }
-  &__margin{
-    @include margin(5px);
-  }
-}
 
-@media screen and (min-width: 786px) and (max-width: 992px){
+
+
+
+//  a{
+//   text-decoration: none;
+//   color:$anchor-color;
+// }
+
+// .title{
+//   @extend %padding;
+//   @include margin(5px);
+// }
+// .header{
+//   @include flex(space-between);
+//   font-family: $font-Roboto;
+//   @extend %padding;
+//     &__logo{
+//       @include dimension(250px, 60px);
+//     }
+// }
+// .navbar{
+//   font-family: $font-Roboto;
+//   &__title{
+//     @include margin(10px);
+//   }
+//   &__subtitle{
+//     color:$subtitle-color;
+//     font-weight:$font-medium;
+//     @include margin(10px);
+//   }
+// }
+// // .menu-container{
+// //   font-family: $font-Roboto;
+// //   @include make-container(5px);
+// // }
+// .list{
+//   display: block;
+//   @include padding(10px);
+//   @include flex(space-around);
+//       &__item{
+//        @include flex-gap(12px);
+//        @include list-btn(15px);
+//        @include dimension(260px, 30px);
+      
+//       }
+//       &__number{
+//        @include number();
+//       }
+//       &__item:hover{
+//         background-color:$primary-bg-color;
+//       }
+//       &__icon{
+//         color: $description-color;
+//       }
+      
+      
+// }
+// .main{
+//   @extend %padding;
+//   .menu{
+//     @include flex(space-between);
+   
+//     gap:20px;
+//   }
+//   .card{
+//     @include card(100%, 400px);
+//     &__image{
+//       @include card-image(100%, 300px);
+//     }
+//     &__description{
+//       padding: 0px 20px 0px 20px;
+//       @include flex(space-between);
+//     }
+//     &__rating{
+//       font-size: larger;
+//     }
+//   }
+// }
+// .footer{
+//   @include bg-color(#6F6D73);
+//   color: $white-color;
+//   &__title{
+//    padding: 10px 0px 0px 10px;
+//     font-family:$font-Shrikhand;
+//     font-size: larger;
+//   }
+//   &__logo{
+//     @include dimension(200px,40px);
+//     color:$white-color
+//   }
+//   &__content{
+//    @extend %padding;
+//   }
+//   &__item{
+//     @include flex-gap(5px);
+   
+//   }
+//   &__margin{
+//     @include margin(5px);
+//   }
+// }
+
+// @media screen and (min-width: 786px) and (max-width: 992px){
  
-  .list{
-    display: block;
-    @include padding(20px);
-    @include flex(space-around);
+//   .list{
+//     display: block;
+//     @include padding(20px);
+//     @include flex(space-around);
     
-    flex-wrap: wrap;
-        &__item{
-         @include flex-gap(10px);
-         @include list-btn(8px);
-         width:100%;
-         font-size:$font-medium;
-         @include bottom-margin(15px);
-        }  
-        &__number{
-          @include number(-25px);
-         }
-  }
+//     flex-wrap: wrap;
+//         &__item{
+//          @include flex-gap(10px);
+//          @include list-btn(8px);
+//          width:100%;
+//          font-size:$font-medium;
+//          @include bottom-margin(15px);
+//         }  
+//         &__number{
+//           @include number(-25px);
+//          }
+//   }
    
-  }
+//   }
 
-  @media screen and (max-width:786px){
+//   @media screen and (max-width:786px){
     
-    .header{
-      padding: 0px;
-      flex-wrap: wrap;
-      justify-content: center;
-      &__location{
-        @include flex();
-        @include dimension(100%, 40px);
-        @include bg-color(#DBDADD);
-        box-shadow:(0px  -4px -4px 5px  rgba(0,0,0,0.2));
-      }
+//     .header{
+//       padding: 0px;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       &__location{
+//         @include flex();
+//         @include dimension(100%, 40px);
+//         @include bg-color(#DBDADD);
+//         box-shadow:(0px  -4px -4px 5px  rgba(0,0,0,0.2));
+//       }
       
-    }
+//     }
 
-    .navbar{
-      @include flex();
-      flex-direction: column;
-      @include bg-color(#EFECEF);
-      padding:30px;
+//     .navbar{
+//       @include flex();
+//       flex-direction: column;
+//       @include bg-color(#EFECEF);
+//       padding:30px;
       
-    }
-    .list{
-      @include padding(5px);
-      @include flex();
-      flex-wrap: wrap;
-      padding:20px;
-      align-items: center;
-      flex-wrap: wrap;
-      &__item{
-       @include flex(start);
-        @include list-btn(8px);
-        margin: 0px 0px 15px 0px;
-        @include dimension(100%, 40px);
-        font-size:small;
-        background-color: #EFECEF;
-      }  
-      &__number{
-        @include number(-23px);
-       }
+//     }
+//     .list{
+//       @include padding(5px);
+//       @include flex();
+//       flex-wrap: wrap;
+//       padding:20px;
+//       align-items: center;
+//       flex-wrap: wrap;
+//       &__item{
+//        @include flex(start);
+//         @include list-btn(8px);
+//         margin: 0px 0px 15px 0px;
+//         @include dimension(100%, 40px);
+//         font-size:small;
+//         background-color: #EFECEF;
+//       }  
+//       &__number{
+//         @include number(-23px);
+//        }
 
-    }
+//     }
 
-    .main{
-      .menu{
-        flex-wrap: wrap;
-      }
+//     .main{
+//       .menu{
+//         flex-wrap: wrap;
+//       }
     
-    }
+//     }
 
-
-
-    
-    
-        
-
-  }
+//   }
