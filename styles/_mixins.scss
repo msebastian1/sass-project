@@ -18,6 +18,11 @@
   justify-content: $center;
  
 }
+@each $key, $val in $justify-content{
+  .justify-content-#{$key}{
+    @include  justify-content($center:$val);
+  }
+}
 
 @mixin options-item($width,$height){
   @include justify-content(start);

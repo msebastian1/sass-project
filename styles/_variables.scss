@@ -19,6 +19,7 @@ $colors : (
   "pale-grey": #EDECEF,
   "light-grey": $description-color,
   "black": black,
+  "bg-colour": #F3F3F3,
 );
 
 $justify-content: (
@@ -33,6 +34,11 @@ $justify-content: (
 $base-padding : 10px;
 $base-margin :10px;
 
+$padding-m: 15px;
+$padding-lg: 20px;
+$padding-xlg:25px;
+$padding-xxl:30px;
+
 //borders
 $base-border-thickness: 1px;
 $base-border-radius:20px;
@@ -40,6 +46,13 @@ $base-border-radius:20px;
 //box-shadows
 $base-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
+//base font size
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+      
 //base-gap
 $base-gap: 10px;
 

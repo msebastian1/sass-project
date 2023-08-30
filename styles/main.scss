@@ -1,9 +1,14 @@
+
+@import 'functions';
 @import 'variables';
+
 @import 'font';
 @import 'base';
-@import 'extend';
+
 @import 'mixins';
 @import 'card';
+
+@import 'grid';
 @import "colours";
 
 @import 'button';
@@ -11,7 +16,9 @@
 @import 'containers';
 @import 'breakpoint';
 @import './pages/index';
-@import 'function';
+
+@import 'utilities';
+
 
 
 .number-icon{
